@@ -1,0 +1,21 @@
+.search-input{
+  font-size: 200%;
+}
+.horizontal-center-container{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.landing-page-title{
+  font-family: 'Helvetica';
+  color: white;
+  font-size: 800%;
+  text-align: center;
+  margin-bottom: 50px;
+}

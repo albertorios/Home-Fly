@@ -1,0 +1,56 @@
+<template name="admin_results">
+  {{u_address}}
+  <div id="resultz" class="ui very padded segment" style="position:relative; width: 80%; left:10%;margin-top:50px;margin-bottom:50px;visibility: hidden">
+    {{#each shelterz}}
+    <div class="ui styled fluid accordion">
+      <div class="title">
+        <div class="ui two column padded grid">
+          <div class="column">
+            <h2 class="ui header" style="display:inline-block"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;{{Name}}</h2>
+          </div>
+          <div class="column">
+            <h2 class="ui header grey" style="display:inline-block"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{Distance}} miles away</h2>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="ui eigth column padded grid">
+          <div class="column">
+          </div>
+          <div class="four wide column">
+            <h3 class="ui header" style="display:inline-block"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;&nbsp;{{Address}}</h3>
+          </div>
+          <div class="three wide column">
+            <h3 class="ui header" style="display:inline-block">{{City}}, {{State}}</h3>
+          </div>
+        </div>
+        <div class="ui eigth column padded grid">
+          <div class="column">
+          </div>
+          <div class="four wide column">
+            <h3 class="ui header" style="display:inline-block"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;{{Number}}</h3>
+          </div>
+        </div>
+        <div class="ui eigth column padded grid">
+          <div class="column">
+          </div>
+          <div class="four wide column">
+            <h3 class="ui header" style="display:inline-block"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp;&nbsp;<a target="_blank" href="http://{{Site}}">{{Site}}</a></h3>
+          </div>
+        </div>
+        <div class="ui eigth column padded grid">
+          <div class="column">
+          </div>
+          <div class="four wide column">
+            <h3 class="ui header" style="display:inline-block"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>&nbsp;&nbsp;Available Beds: {{Beds}}</h3>
+          </div>
+          <div class="three wide column">
+            <h3 class="ui header" style="display:inline-block"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;Residents: {{Tag}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{activate_drop}}
+    {{/each}}
+  </div>
+</template>
